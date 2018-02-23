@@ -5,11 +5,9 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 BLUE = [255, 0, 0]
-
 img1 = cv2.imread('test.png')
 replicate = cv2.copyMakeBorder(img1,10,10,10,10,cv2.BORDER_REPLICATE)
 constant = cv2.copyMakeBorder(img1,10,10,10,10,cv2.BORDER_CONSTANT,value=BLUE)
-
 plt.subplot(231),plt.imshow(replicate,'gray'),plt.title('REPLICATE')
 plt.subplot(232),plt.imshow(constant,'gray'),plt.title('CONSTANT')
 plt.subplot(233),plt.imshow(constant,'gray'),plt.title('CONSTANT')
