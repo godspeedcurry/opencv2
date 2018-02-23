@@ -16,7 +16,7 @@ plt.subplot(235),plt.imshow(constant,'gray'),plt.title('CONSTANT')
 plt.subplot(236),plt.imshow(constant,'gray'),plt.title('CONSTANT')
 plt.subplot(236),plt.imshow(constant,'gray'),plt.title('CONSTANT')
 
-# subplot是将多个图画到一个平面上的工具。
+# subplot是将多个图画到一个平面上的工具。s
 # 其中，m表示是图排成m行，n表示图排成n列，也就是整个figure中有n个图是排成一行的，一共m行，如果m=2就是表示2行图。
 
 plt.show()
