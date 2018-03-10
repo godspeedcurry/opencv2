@@ -8,18 +8,18 @@
 import numpy as np
 import cv2
 
-img = cv2.imread('test.png', 0)
-img1 = cv2.imread('gray.png', cv2.IMREAD_COLOR)
+img = cv2.imread('solved.bmp', 0)
+img1 = cv2.imread('solved.bmp', cv2.IMREAD_COLOR)
 # 读入彩色图像，ignore透明度
-img2 = cv2.imread('test.png', cv2.IMREAD_GRAYSCALE)
+img2 = cv2.imread('solved.bmp', cv2.IMREAD_GRAYSCALE)
 # 以灰度模式读入图像
 img3 = cv2.imread('test.png', cv2.IMREAD_UNCHANGED)
 # read 包括图像的alpha通道
-cv2.imwrite('gradescale.png', img2)
+cv2.imwrite('ssss.bmp', img2)
 # 保存img2
 cv2.namedWindow('image', cv2.WINDOW_NORMAL)
 # add这句使得窗口大小可以调整
-cv2.imshow('image', img1)
+cv2.imshow('image', img2)
 a = cv2.waitKey(0)
 print a
 # 键盘绑定函数，ms为单位，监测键盘输入，1s内有输入，返回该按键的ASCII值，无 return -1

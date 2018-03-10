@@ -3,7 +3,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('pf.png', 0)
+img = cv2.imread('solved.bmp', 0)
 kernel = np.ones((5, 5), np.uint8)
 erosion = cv2.erode(img, kernel, iterations=1)
 # 腐蚀
@@ -20,7 +20,13 @@ tophat = cv2.morphologyEx(img, cv2.MORPH_TOPHAT, kernel)
 # 礼帽
 blackhat = cv2.morphologyEx(img, cv2.MORPH_BLACKHAT, kernel)
 # 黑帽
-cv2.imshow('image', blackhat)
+cv2.imshow('image', erosion)
+cv2.imshow('image1', dilation)
+cv2.imshow('image2', opening)
+cv2.imshow('image3', closing)
+cv2.imshow('image4', gradient)
+cv2.imshow('image5', tophat)
+cv2.imshow('image6', blackhat)
 a = cv2.waitKey(0)
 print a
 # 键盘绑定函数，ms为单位，监测键盘输入，1s内有输入，返回该按键的ASCII值，无 return -1
